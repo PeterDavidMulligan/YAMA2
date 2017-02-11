@@ -1,0 +1,13 @@
+<resources>
+    <!-- App Strings -->
+    <string name="app_name">YAMA</string>
+    <string name="app_title">Yet Another Movie App</string>
+
+    <!-- App Texts -->
+    <string name="sort_text">Sort Movies by...</string>
+    <string name="rating_text">Rating</string>
+    <string name="popularity_text">Popularity</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="rating_icon">Rating</string>
+
+</resources>
