@@ -20,9 +20,9 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.example.aezur.yama.Utils.JsonUtils;
-import com.example.aezur.yama.Utils.MovieAdapter;
-import com.example.aezur.yama.Utils.NetworkUtils;
+import com.example.aezur.yama.utils.JsonUtils;
+import com.example.aezur.yama.utils.MovieAdapter;
+import com.example.aezur.yama.utils.NetworkUtils;
 
 import java.io.IOException;
 import java.net.URL;

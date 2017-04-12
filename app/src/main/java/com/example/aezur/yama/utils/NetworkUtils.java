@@ -5,11 +5,8 @@
  * Last modified: 30/01/17 08:13
  */
 
-package com.example.aezur.yama.Utils;
+package com.example.aezur.yama.utils;
 
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.net.Uri;
 import android.util.Log;
 
@@ -63,7 +60,7 @@ public class NetworkUtils {
         String mQueryApiVersion = "3";
         String mSearchParam = "movie";
         String mApiKey = "api_key";
-        String mApiKeyValue = "ENTER PERSONAL API KEY HERE!";
+        String mApiKeyValue = "251dd872ddce793e87ad5d51001d4e85";
 
         Uri uri = new Uri.Builder().
                 scheme(mQueryScheme).    //Protocol being used

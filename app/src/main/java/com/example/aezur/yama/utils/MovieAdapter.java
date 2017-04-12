@@ -5,7 +5,7 @@
  * Last modified: 08/02/17 11:00
  */
 
-package com.example.aezur.yama.Utils;
+package com.example.aezur.yama.utils;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

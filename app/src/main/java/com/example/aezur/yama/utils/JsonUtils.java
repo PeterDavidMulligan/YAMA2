@@ -5,9 +5,7 @@
  * Last modified: 02/02/17 00:02
  */
 
-package com.example.aezur.yama.Utils;
-
-import android.util.Log;
+package com.example.aezur.yama.utils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
