@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.OnIt
      * A subclass of AsyncTask that queries TMDb and returns Json
      * containing the query results.
      */
-    public class MovieQueryTask extends AsyncTask<URL, Void, String> {
+    private class MovieQueryTask extends AsyncTask<URL, Void, String> {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -157,7 +157,6 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.OnIt
         }
     }
 
-
     ///// ACTIVITY RESTART STUFF /////
 
     @Override
@@ -190,7 +189,6 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.OnIt
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.sort_rating:
-
                 changeSortOrder(0);
                 return true;
             case R.id.sort_popularity:
@@ -203,7 +201,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.OnIt
     /**
      * Used to change the checked item menu
      * @param menu Menu to be prepared
-     * @return
+     * @return Returns true if successful
      */
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {

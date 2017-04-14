@@ -13,6 +13,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.example.aezur.yama.utils.JsonUtils;
 import com.example.aezur.yama.utils.NetworkUtils;
 import com.squareup.picasso.Picasso;
@@ -37,7 +38,7 @@ public class MovieItemActivity extends AppCompatActivity {
         mTitleTextView = (TextView) findViewById(R.id.tv_movieItem_movieTitle);
         mDescriptionTextView = (TextView) findViewById(R.id.tv_movieItem_movieDescription);
         mReleaseDateTextView = (TextView) findViewById(R.id.tv_movieItem_movieReleaseDate);
-        mRatingTextView = (TextView) findViewById(R.id.tv__rating);
+        mRatingTextView = (TextView) findViewById(R.id.tv_rating);
         mMovieImageView = (ImageView) findViewById(R.id.iv_movieItem_movieImage);
 
         Intent intent = getIntent();
@@ -59,7 +60,8 @@ public class MovieItemActivity extends AppCompatActivity {
             mRatingTextView.setText(rating);
             mTitleTextView.setText(movieTitle);
             mDescriptionTextView.setText(movieDesc);
-            mReleaseDateTextView.setText("Release Date: " + movieReleaseDate);
+            String releaseDate = getResources().getString(R.string.release_date_text) + movieReleaseDate;
+            mReleaseDateTextView.setText(releaseDate);
         }
     }
 }
