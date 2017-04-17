@@ -2,15 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp"
-    android:background="@drawable/rounded_corners">
-
-    <TextView style="@style/InvertedBannerText"
-        android:id="@+id/tv_movieTitle" />
+    android:layout_margin="4dp" >
 
     <ImageView style="@style/BottomCenteredImage"
         android:id="@+id/iv_movieImage"
-        android:layout_below="@+id/tv_movieTitle"
-        android:contentDescription="@string/movie_poster"/>
+        android:contentDescription="@string/movie_poster"
+        android:background="@drawable/rounded_corners"/>
 
 </RelativeLayout>

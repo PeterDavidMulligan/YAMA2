@@ -75,10 +75,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
      */
     public class MovieViewHolder extends RecyclerView.ViewHolder implements OnClickListener {
         //JSONObject keys
-        private static final String TITLE = "title";
         private static final String POSTER_PATH = "poster_path";
-
-        private TextView mMovieListItemName;
         private ImageView mMovieListItemImage;
 
         private Context mContext;
@@ -86,7 +83,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
         public MovieViewHolder(View view, Context context) {
             super(view);
             mContext = context;
-            mMovieListItemName = (TextView) itemView.findViewById(R.id.tv_movieTitle);
             mMovieListItemImage = (ImageView) itemView.findViewById(R.id.iv_movieImage);
             view.setOnClickListener(this);
         }
@@ -98,10 +94,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
          * @param index Index of the item being bound
          */
         public void bind(int index) {
-            String movieName = JsonUtils.getMovieData(mQueryResults, TITLE, index);
             String posterPath = JsonUtils.getMovieData(mQueryResults, POSTER_PATH, index);
             String posterUrl = NetworkUtils.buildPosterUrl(posterPath);
-            mMovieListItemName.setText(movieName);
             Picasso.with(mContext).load(posterUrl).into(mMovieListItemImage);
         }
 

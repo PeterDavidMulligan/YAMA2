@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/black_bg</item>
     </style>
 
     <!-- Text Styles -->
@@ -20,8 +21,8 @@
     </style>
 
     <style name="InvertedBannerText" parent="BannerText">
-        <item name="android:textColor">@color/colorPrimary</item>
-        <item name="android:background">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
     </style>
 
     <!-- Image Styles -->
@@ -32,4 +33,16 @@
         <item name="android:paddingBottom">4dp</item>
     </style>
 
+    <style name="Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:lines">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
 </resources>

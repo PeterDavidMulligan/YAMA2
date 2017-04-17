@@ -17,4 +17,23 @@
     <string name="json_movie_rating">vote_average</string>
     <string name="json_movie_popularity">popularity</string>
 
+    <!-- Values for Layout-->
+    <string name="tools_release_date">Release Date : 01-01-1988</string>
+    <string name="tools_lorum_ipsum_500c">Lorem ipsum dolor. Sit amet augue condimentum sit a.
+        Sapien in vivamus ullamcorper vitae per inceptos est convallis. Nam vestibulum sodales
+        tortor cras a. Pede consectetuer nam platea dolor metus amet fusce velit vestibulum et
+        ante nisl dolorem rhoncus nec ante erat. Cras vitae ante amet suspendisse diam. Tellus
+        id massa. Lorem lectus lectus felis pede mauris. Leo interdum enim in arcu nec. Dictum
+        aliquam placerat rhoncus quam lacus. Litora porttitor vestibulum. Imperdiet ac a feugiat
+        ac vivamus. A sem risus. Amet suspendisse eu proin ante ullamcorper. Est in ligula.
+        Aliquam dolor vel fermentum non ante
+    </string>
+    <string name="tools_lorum_ipsum_250c">
+        Lorem ipsum dolor sit amet mauris. Arcu sem malesuada nisl diam molestie. Odio luctus
+        ligula mi pede suspendisse. Cras accumsan phasellus mi id leo. Blandit mauris sed. Odio
+        hac pellentesque dapibus aliquam at. Purus quisque etiam ultricies turpis maecenas tortor
+        arcu nibh. Imperdiet suscipit facilisi
+    </string>
+    <string name="tools_random_float">7.6</string>
+
 </resources>
